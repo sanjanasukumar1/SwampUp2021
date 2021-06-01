@@ -3,7 +3,7 @@ resources:
     type: GitRepo
     configuration:
       gitProvider: my_github
-      path: cyan21/SwampUp2021
+      path: sanjanasukumar1/SwampUp2021
       branches:
         include: {{ gitBranch }}
       files:
@@ -22,6 +22,6 @@ resources:
   - name: lab1_bi_webapp_python_promoted
     type: BuildInfo
     configuration:
-      sourceArtifactory: artifactory_brexit
+      sourceArtifactory: artifactory_eu
       buildName: {{ gitBranch }}_webapp_python
       buildNumber: ${run_number}
